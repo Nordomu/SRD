@@ -26,5 +26,11 @@ namespace RemoveDevice
         {
             this.InitializeComponent();
         }
+
+        private void MainSizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            this.ejectButton.Width = (this.ActualWidth / 5);
+            this.boxDevice.Width = this.ActualWidth / 2;
+        }
     }
 }
